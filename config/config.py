@@ -193,13 +193,6 @@ if UPSTREAM_REPO:
         )
         sys.exit()
 
-if GITHUB_REPO:
-    if not re.match("(?:http|https)://", GITHUB_REPO):
-        print(
-            "[ERROR] - Your GITHUB_REPO url is wrong. Please ensure that it starts with https://"
-        )
-
-
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
