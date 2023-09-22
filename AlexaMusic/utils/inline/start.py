@@ -72,13 +72,5 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text=_["S_B_5"],
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
-        ]
-    )
-        if OWNER_ID:
-            buttons.append(
-                [
-                    InlineKeyboardButton(text=_["S_B_7"], user_id=OWNER),
-                ]
-            )
     buttons.append([InlineKeyboardButton(text=_["ST_B_6"], callback_data="LG")])
     return buttons
