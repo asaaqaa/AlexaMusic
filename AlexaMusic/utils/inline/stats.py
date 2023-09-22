@@ -71,12 +71,6 @@ def get_stats_markup(_, status):
         [
             [
                 InlineKeyboardButton(
-                    text=_["SA_B_7"],
-                    callback_data="TOPMARKUPGET",
-                )
-            ],
-            [
-                InlineKeyboardButton(
                     text=_["SA_B_6"],
                     url=f"https://t.me/{app.username}?start=stats",
                 ),
