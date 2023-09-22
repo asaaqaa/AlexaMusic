@@ -68,7 +68,6 @@ def get_stats_markup(_, status):
         ),
     ]
     upl = InlineKeyboardMarkup(
-        [
             [
                 InlineKeyboardButton(
                     text=_["SA_B_6"],
@@ -80,7 +79,7 @@ def get_stats_markup(_, status):
                 ),
             ],
             sudo if status else not_sudo,
-        ]
+        
     )
     return upl
 
